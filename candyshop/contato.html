@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - CandyShop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="pill-img" style="background-image: url('assets/img/pill.png');"></div>
+        <div class="header-container">
+            <div class="logo">
+                
+             <h1>CandyShop</h1>
+             <p>Brasil</p>
+            </div>
+            <div class="location">
+                <p>Local: <span id="user-location">São Paulo</span></p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="shop.html">SHOP</a></li>
+                    <li><a href="sobre.html">SOBRE</a></li>
+                    <li><a href="contato.html" class="active">CONTATO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contact-page">
+        <section class="contact-hero">
+            <div class="contact-overlay"></div>
+            <div class="hero-content">
+                <h2>Entre em Contato</h2>
+                <p></p>
+            </div>
+        </section>
+        
+        <section class="contact-form-section">
+            <div class="form-container">
+                <div class="form-header">
+                    <h2>Formulário de Contato</h2>
+                    <p>Resposta em até 48h, indentificado como "PillMail"</p>
+                </div>
+                
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Assunto</label>
+                        <select id="subject" name="subject" required>
+                            <option value="" disabled selected>Selecione um assunto</option>
+                            <option value="question">Dúvida sobre o projeto</option>
+                            <option value="feedback">Feedback sobre o site</option>
+                            <option value="suggestion">Sugestão</option>
+                            <option value="other">Outro</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Digite sua mensagem aqui..." required></textarea>
+                    </div>
+                    
+                    <div class="form-group captcha">
+                        <div class="captcha-container">
+                            <div class="captcha-image">ABC123</div>
+                            <button type="button" class="captcha-refresh">↻</button>
+                        </div>
+                        <input type="text" id="captcha" name="captcha" placeholder="Digite o código acima" required>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn submit-btn">Enviar Mensagem</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        
+    </main>
+    
+    <footer>
+        <div class="disclaimer-footer">
+            <h3>CANDYSHOP BRASIL</h3>
+            <p>Est. 2025 </p>
+            <p>Envio ao Brasil todo no site "http://candyshopbrhqx4osw62xs7abwphsq8ldaylidrx2v2oethdhbj6mlo6r6ad.onion/"</p>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 CandyShop Brasil</p>
+        </div>
+    </footer>
+    
+    <div class="popup" id="form-popup">
+        <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <h2>Indisponível</h2>
+            <p>Tente um com um endereço de email diferente.</p>
+        </div>
+    </div>
+    
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
+
+<!--
+By: GabeeNoob
+-->

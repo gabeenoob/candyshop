@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto - CandyShop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="pill-img" style="background-image: url('assets/img/pill.png');"></div>
+        <div class="header-container">
+            <div class="logo">
+                
+             <h1>CandyShop</h1>
+             <p>Brasil</p>
+            </div>
+            <div class="location">
+                <p>Local: <span id="user-location">São Paulo</span></p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="shop.html">SHOP</a></li>
+                    <li><a href="sobre.html">SOBRE</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="product-page">
+        <div class="product-background"></div>
+        
+        <section class="product-details">
+            <div class="product-gallery">
+                <div class="main-product-image">
+                    <img id="product-image" src="" alt="MDMA Produto">
+                </div>
+                <div class="product-thumbnails">
+                    <div class="thumbnail active">
+                        <img src="assets/img/red-pill.png" alt="Red MDMA" data-color="red">
+                    </div>
+                    <div class="thumbnail">
+                        <img src="assets/img/blue-pill.png" alt="Blue MDMA" data-color="blue">
+                    </div>
+                    <div class="thumbnail">
+                        <img src="assets/img/green-pill.png" alt="Green MDMA" data-color="green">
+                    </div>
+                    <div class="thumbnail">
+                        <img src="assets/img/pink-pill.png" alt="Pink MDMA" data-color="pink">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-info-container">
+                <div class="product-header">
+                    <h1 id="product-name">MDMA</h1>
+                    <div class="product-badge">Premium</div>
+                </div>
+                
+                <div class="product-meta">
+                    <div class="product-quantity">
+                        <span id="product-quantity">300mg</span>
+                    </div>
+                    <div class="product-rating">
+                        <span class="stars">⭐⭐⭐⭐⭐</span>
+                        <span class="review-count">(42 avaliações)</span>
+                    </div>
+                </div>
+                
+                <div class="product-price-container">
+                    <div class="product-price">
+                        <span class="price-label">Preço:</span>
+                        <span id="product-price" class="price">R$ 50,00</span>
+                    </div>
+                    <div class="btc-price">
+                        <span class="price-label">Bitcoin:</span>
+                        <span id="product-btc-price">0.00045 BTC</span>
+                    </div>
+                </div>
+                
+                <div class="product-actions">
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1" max="10">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    
+                    <div class="action-buttons">
+                        <button class="btn cart-btn" id="add-to-cart">Adicionar ao Carrinho</button>
+                        <button class="btn buy-btn" id="buy-now">Comprar Agora</button>
+                    </div>
+                </div>
+                
+                <div class="product-description-container">
+                    <div class="tabs">
+                        <button class="tab-btn active" data-tab="description">Descrição</button>
+                        <button class="tab-btn" data-tab="effects">Efeitos</button>
+                        <button class="tab-btn" data-tab="warnings">Avisos</button>
+                        <button class="tab-btn" data-tab="dose">Dose</button>
+                    </div>
+                
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="description">
+                            <p id="product-description">MDMA (3,4-metilenodioximetanfetamina) é uma substância psicoativa conhecida por seus efeitos eufóricos e de conexão social.</p>
+                            <p>Características do produto:</p>
+                            <ul>
+                                <li>Pureza simulada: 91%</li>
+                                <li>Forma: Comprimido</li>
+                                <li>Cristais de alta qualidade</li>
+                                <li>Testado em laboratório</li>
+                            </ul>
+                        </div>
+                
+                        <div class="tab-pane" id="effects">
+                            <h3>Efeitos Causados</h3>
+                            <p>Em um contexto real, MDMA causa os seguintes efeitos:</p>
+                            <ul>
+                                <li>Euforia e bem-estar</li>
+                                <li>Aumento da energia</li>
+                                <li>Maior sociabilidade</li>
+                                <li>Alterações na percepção sensorial</li>
+                                <li>Sentimentos de conexão e intimidade</li>
+                                <li>Alterações na percepção visual</li>
+                            </ul>
+                            <p>Duração típica dos efeitos: 3-6 horas</p>
+                        </div>
+                
+                        <div class="tab-pane" id="warnings">
+                            <h3>Avisos de Segurança</h3>
+                            <p>O MDMA é uma substância ilegal e potencialmente perigosa. Em contextos reais, NÃO deve ser consumido por:</p>
+                            <ul class="warning-list">
+                                <li>Menores de 18 anos</li>
+                                <li>Gestantes ou lactantes</li>
+                                <li>Pessoas com condições cardíacas</li>
+                                <li>Pessoas com histórico de problemas psiquiátricos</li>
+                                <li>Pessoas em tratamento com medicamentos IMAO</li>
+                                <li>Pessoas hipertensas</li>
+                            </ul>
+                        </div>
+                
+                        <div class="tab-pane" id="dose">
+                            <h3>Dose recomendada de MDMA</h3>
+                            <ul>
+                                <li>Dose baixa: 1-1,5 mg por kg</li>
+                                <li>Dose média: 1,5-2 mg por kg</li>
+                                <li style="color:#ff6b6b;">Dose máxima: 150 mg</li>
+                            </ul>
+                            <p>Lembre-se: a tolerância varia com o peso corporal, saúde e experiência. Nunca ultrapasse a dose recomendada e sempre use com responsabilidade.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        
+        <section class="product-reviews">
+            <h2>Avaliações de Usuários</h2>
+            <div class="review-summary">
+                <div class="rating-average">
+                    <span class="average">4.8</span>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <span class="total-reviews">42 avaliações</span>
+                </div>
+                <div class="rating-bars">
+                    <div class="rating-bar">
+                        <span class="star-label">5 ⭐</span>
+                        <div class="bar-container">
+                            <div class="bar" style="width: 85%"></div>
+                        </div>
+                        <span class="count">36</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span class="star-label">4 ⭐</span>
+                        <div class="bar-container">
+                            <div class="bar" style="width: 10%"></div>
+                        </div>
+                        <span class="count">4</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span class="star-label">3 ⭐</span>
+                        <div class="bar-container">
+                            <div class="bar" style="width: 5%"></div>
+                        </div>
+                        <span class="count">2</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span class="star-label">2 ⭐</span>
+                        <div class="bar-container">
+                            <div class="bar" style="width: 0%"></div>
+                        </div>
+                        <span class="count">0</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span class="star-label">1 ⭐</span>
+                        <div class="bar-container">
+                            <div class="bar" style="width: 0%"></div>
+                        </div>
+                        <span class="count">0</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="reviews-list">
+                <div class="review-item">
+                    <div class="review-header">
+                        <div class="user-info">
+                            <div class="avatar">MR</div>
+                            <div class="user-details">
+                                <h4 class="username">MorpheusRave</h4>
+                                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+                            </div>
+                        </div>
+                        <div class="review-date">02/03/2025</div>
+                    </div>
+                    <div class="review-content">
+                        <p>Muito forte e puro. A experiência foi incrível, senti uma energia que durou a noite toda. Recomendo!</p>
+                    </div>
+                </div>
+                
+                <div class="review-item">
+                    <div class="review-header">
+                        <div class="user-info">
+                            <div class="avatar">PF</div>
+                            <div class="user-details">
+                                <h4 class="username">PsyFest2025</h4>
+                                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+                            </div>
+                        </div>
+                        <div class="review-date">28/02/2025</div>
+                    </div>
+                    <div class="review-content">
+                        <p>Comprei para o festival de verão e foi perfeito. Efeito limpo, sem ressaca no dia seguinte. Definitivamente vou comprar novamente!</p>
+                    </div>
+                </div>
+                
+                <div class="review-item">
+                    <div class="review-header">
+                        <div class="user-info">
+                            <div class="avatar">DN</div>
+                            <div class="user-details">
+                                <h4 class="username">DanceNight</h4>
+                                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+                            </div>
+                        </div>
+                        <div class="review-date">20/02/2025</div>
+                    </div>
+                    <div class="review-content">
+                        <p>Qualidade consistente como sempre. As cores vibrantes e a textura da música foram ampliadas. Ótima experiência sensorial!</p>
+                    </div>
+                </div>
+                
+                <div class="review-item">
+                    <div class="review-header">
+                        <div class="user-info">
+                            <div class="avatar">RK</div>
+                            <div class="user-details">
+                                <h4 class="username">RaveKing</h4>
+                                <div class="review-rating">⭐⭐⭐⭐</div>
+                            </div>
+                        </div>
+                        <div class="review-date">15/02/2025</div>
+                    </div>
+                    <div class="review-content">
+                        <p>Bom produto, mas demorou um pouco para fazer efeito. No geral, a experiência foi positiva depois que começou a agir.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="load-more">
+                <button class="btn">Carregar Mais Avaliações</button>
+            </div>
+        </section>
+        
+        <section class="related-products">
+            <h2>Outras Opções</h2>
+            <div class="product-slider">
+                <div class="product-card mini" style="--product-color: #ff3c3c;">
+                    <div class="product-image">
+                        <img src="assets/img/red-pill.png" alt="Red MDMA">
+                    </div>
+                    <div class="product-info">
+                        <h3>Red MDMA</h3>
+                        <p>300mg</p>
+                        <span class="price">R$ 50,00</span>
+                    </div>
+                </div>
+                
+                <div class="product-card mini" style="--product-color: #3caeff;">
+                    <div class="product-image">
+                        <img src="assets/img/blue-pill.png" alt="Blue MDMA">
+                    </div>
+                    <div class="product-info">
+                        <h3>Blue MDMA</h3>
+                        <p>250mg</p>
+                        <span class="price">R$ 45,00</span>
+                    </div>
+                </div>
+                
+                <div class="product-card mini" style="--product-color: #4cff4c;">
+                    <div class="product-image">
+                        <img src="assets/img/green-pill.png" alt="Green MDMA">
+                    </div>
+                    <div class="product-info">
+                        <h3>Green MDMA</h3>
+                        <p>280mg</p>
+                        <span class="price">R$ 48,00</span>
+                    </div>
+                </div>
+                
+                <div class="product-card mini" style="--product-color: #ff8eda;">
+                    <div class="product-image">
+                        <img src="assets/img/pink-pill.png" alt="Pink MDMA">
+                    </div>
+                    <div class="product-info">
+                        <h3>Pink MDMA</h3>
+                        <p>320mg</p>
+                        <span class="price">R$ 55,00</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="disclaimer-footer">
+            <h3>CANDYSHOP BRASIL</h3>
+            <p>Est. 2025 </p>
+            <p>Envio ao Brasil todo no site "http://candyshopbrhqx4osw62xs7abwphsq8ldaylidrx2v2oethdhbj6mlo6r6ad.onion/"</p>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 CandyShop Brasil</p>
+        </div>
+    </footer>
+    
+    <div class="checkout-modal" id="checkout-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Finalizar Compra</h2>
+            <form id="checkout-form">
+                <div class="form-group">
+                    <label for="postal-code">Caixa Postal:</label>
+                    <input type="text" id="postal-code" required placeholder="Digite sua caixa postal">
+                </div>
+                <div class="form-group">
+                    <label for="payment-method">Método de Pagamento:</label>
+                    <select id="payment-method">
+                        <option value="bitcoin">Bitcoin</option>
+                        <option value="monero">Monero</option>
+                        <option value="ethereum">Ethereum</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn submit-btn">Finalizar Compra</button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="popup" id="checkout-popup">
+        <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <h2>Indisponível no seu local</h2>
+            <p>Entrega indiponível na sua área. Em breve, entrega para todo Brasil.</p>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/produto.js"></script>
+</body>
+</html>
+
+<!--
+By: GabeeNoob
+-->

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CandyShop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/img/pill.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <!--<div class="disclaimer">
+        <p>AVISO: Este é um site FICTÍCIO e EDUCACIONAL. Nenhum produto é vendido ou enviado. Todos os itens são simulações baseadas na série "How to Sell Drugs Online Fast".</p>
+    </div>-->
+
+    <header>
+        <div class="pill-img" style="background-image: url('assets/img/pill.png');"></div>
+        <div class="header-container">
+            <div class="logo">
+                
+             <h1>CandyShop</h1>
+             <p>Brasil</p>
+            </div>
+            <div class="location">
+                <p>Local: <span id="user-location">São Paulo</span></p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">HOME</a></li>
+                    <li><a href="shop.html">SHOP</a></li>
+                    <li><a href="sobre.html">SOBRE</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="carousel-container">
+            <div class="carousel">
+                <!-- Red MDMA -->
+                <div class="carousel-item active" style="--product-color: #ff3c3c;">
+                    <div class="glitch-container">
+                        <div class="glitch-img" style="background-image: url('assets/img/redbackground.png');"></div>
+                    </div>
+                    <div class="carousel-content">
+                        <h2 class="animate-text">Red MDMA</h2>
+                        <p class="animate-text">Experiência intensa com foco em energia e euforia.</p>
+                        <button class="btn" style="--btn-color: #ff3c3c;">Comprar Agora</button>
+                    </div>
+                    <div class="product-image">
+                        <img src="assets/img/red-pill.png" alt="Red MDMA">
+                    </div>
+                </div>
+                
+                <!-- Blue MDMA -->
+                <div class="carousel-item" style="--product-color: #3caeff;">
+                    <div class="glitch-container">
+                        <div class="glitch-img" style="background-image: url('assets/img/bluebackground.png');"></div>
+                    </div>
+                    <div class="carousel-content">
+                        <h2 class="animate-text">Blue MDMA</h2>
+                        <p class="animate-text">Sensação de calma e paz com momentos de euforia controlada.</p>
+                        <button class="btn" style="--btn-color: #3caeff;">Comprar Agora</button>
+                    </div>
+                    <div class="product-image">
+                        <img src="assets/img/blue-pill.png" alt="Blue MDMA">
+                    </div>
+                </div>
+                
+                <!-- Green MDMA -->
+                <div class="carousel-item" style="--product-color: #4cff4c;">
+                    <div class="glitch-container">
+                        <div class="glitch-img" style="background-image: url('assets/img/greenbackground.png');"></div>
+                    </div>
+                    <div class="carousel-content">
+                        <h2 class="animate-text">Green MDMA</h2>
+                        <p class="animate-text">Equilíbrio perfeito entre energia e relaxamento para noites longas.</p>
+                        <button class="btn" style="--btn-color: #4cff4c;">Comprar Agora</button>
+                    </div>
+                    <div class="product-image">
+                        <img src="assets/img/green-pill.png" alt="Green MDMA">
+                    </div>
+                </div>
+                
+                <!-- Pink MDMA -->
+                <div class="carousel-item" style="--product-color: #ff8eda;">
+                    <div class="glitch-container">
+                        <div class="glitch-img" style="background-image: url('assets/img/pinkbackground.png');"></div>
+                    </div>
+                    <div class="carousel-content">
+                        <h2 class="animate-text">Pink MDMA</h2>
+                        <p class="animate-text">Sensação de amor e conexão social com efeitos sensoriais intensos.</p>
+                        <button class="btn" style="--btn-color: #ff8eda;">Comprar Agora</button>
+                    </div>
+                    <div class="product-image">
+                        <img src="assets/img/pink-pill.png" alt="Pink MDMA">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carousel-nav">
+                <button class="carousel-prev"><span>&lt;</span></button>
+                <div class="carousel-dots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                    <span class="dot" data-index="3"></span>
+                </div>
+                <button class="carousel-next"><span>&gt;</span></button>
+            </div>
+        </section>
+        
+        <section class="featured-products">
+            <h2>Produtos em Destaque</h2>
+            <div class="product-grid">
+                <div class="product-card" style="--product-color: #ff3c3c;">
+                    <div class="product-image">
+                        <img src="assets/img/red-pill.png" alt="Red MDMA">
+                    </div>
+                    <div class="product-info">
+                        <h3>Red MDMA</h3>
+                        <p>300mg</p>
+                        <div class="product-price">
+                            <span class="price">R$ 50,00</span>
+                            <span class="btc-price">0.00045 BTC</span>
+                        </div>
+                        <a href="produto.html?id=red" class="btn">Ver Produto</a>
+                    </div>
+                </div>
+                
+                <div class="product-card" style="--product-color: #3caeff;">
+                    <div class="product-image">
+                        <img src="assets/img/blue-pill.png" alt="Blue MDMA">
+                    </div>
+                    <div class="product-info">
+                        <h3>Blue MDMA</h3>
+                        <p>250mg</p>
+                        <div class="product-price">
+                            <span class="price">R$ 45,00</span>
+                            <span class="btc-price">0.00041 BTC</span>
+                        </div>
+                        <a href="produto.html?id=blue" class="btn">Ver Produto</a>
+                    </div>
+                </div>
+                
+                <div class="product-card" style="--product-color: #4cff4c;">
+                    <div class="product-image">
+                        <img src="assets/img/green-pill.png" alt="Green MDMA">
+                    </div>
+                    <div class="product-info">
+                        <h3>Green MDMA</h3>
+                        <p>280mg</p>
+                        <div class="product-price">
+                            <span class="price">R$ 48,00</span>
+                            <span class="btc-price">0.00043 BTC</span>
+                        </div>
+                        <a href="produto.html?id=green" class="btn">Ver Produto</a>
+                    </div>
+                </div>
+                
+                <div class="product-card" style="--product-color: #ff8eda;">
+                    <div class="product-image">
+                        <img src="assets/img/pink-pill.png" alt="Pink MDMA">
+                    </div>
+                    <div class="product-info">
+                        <h3>Pink MDMA</h3>
+                        <p>320mg</p>
+                        <div class="product-price">
+                            <span class="price">R$ 55,00</span>
+                            <span class="btc-price">0.00049 BTC</span>
+                        </div>
+                        <a href="produto.html?id=pink" class="btn">Ver Produto</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="disclaimer-footer">
+            <h3>CANDYSHOP BRASIL</h3>
+            <p>Est. 2025 </p>
+            <p>Envio ao Brasil todo no site "http://candyshopbrhqx4osw62xs7abwphsq8ldaylidrx2v2oethdhbj6mlo6r6ad.onion/"</p>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 CandyShop Brasil</p>
+        </div>
+    </footer>
+    
+    <div class="popup" id="checkout-popup">
+        <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <h2>Indisponível no seu local</h2>
+            <p>Entrega indiponível na sua área. Em breve, entrega para todo Brasil.</p>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/carousel.js"></script>
+</body>
+</html>
+
+<!--
+By: GabeeNoob
+-->

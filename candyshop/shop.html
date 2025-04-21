@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - CandyShop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="pill-img" style="background-image: url('assets/img/pill.png');"></div>
+        <div class="header-container">
+            <div class="logo">
+                
+             <h1>CandyShop</h1>
+             <p>Brasil</p>
+            </div>
+            <div class="location">
+                <p>Local: <span id="user-location">São Paulo</span></p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="shop.html" class="active">SHOP</a></li>
+                    <li><a href="sobre.html">SOBRE</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="shop-header">
+            <h1>Nossa Loja</h1>
+            <p>Produtos de alta qualidade com a melhor experiência</p>
+        </section>
+        
+        
+        <section class="shop-products">
+            <div class="product-grid shop-grid">
+                <!-- Red MDMA -->
+                <div class="product-card animated" style="--product-color: #ff3c3c;">
+                    <div class="product-image-container">
+                        <div class="product-image">
+                            <img src="assets/img/red-pill.png" alt="Red MDMA">
+                        </div>
+                        <div class="product-overlay"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Red MDMA</h3>
+                        <p class="product-desc">O clássico com efeito energético intenso</p>
+                        <p class="product-quantity">300mg</p>
+                        <div class="product-price">
+                            <span class="price">R$ 50,00</span>
+                            <span class="btc-price">0.00045 BTC</span>
+                        </div>
+                        <a href="produto.html?id=red" class="btn pulsate">Ver Produto</a>
+                    </div>
+                </div>
+                
+                <!-- Blue MDMA -->
+                <div class="product-card animated" style="--product-color: #3caeff;">
+                    <div class="product-image-container">
+                        <div class="product-image">
+                            <img src="assets/img/blue-pill.png" alt="Blue MDMA">
+                        </div>
+                        <div class="product-overlay"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Blue MDMA</h3>
+                        <p class="product-desc">Efeito relaxante com ondas de euforia</p>
+                        <p class="product-quantity">250mg</p>
+                        <div class="product-price">
+                            <span class="price">R$ 45,00</span>
+                            <span class="btc-price">0.00041 BTC</span>
+                        </div>
+                        <a href="produto.html?id=blue" class="btn pulsate">Ver Produto</a>
+                    </div>
+                </div>
+                
+                <!-- Green MDMA -->
+                <div class="product-card animated" style="--product-color: #4cff4c;">
+                    <div class="product-image-container">
+                        <div class="product-image">
+                            <img src="assets/img/green-pill.png" alt="Green MDMA">
+                        </div>
+                        <div class="product-overlay"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Green MDMA</h3>
+                        <p class="product-desc">Equilibrado para longas experiências</p>
+                        <p class="product-quantity">280mg</p>
+                        <div class="product-price">
+                            <span class="price">R$ 48,00</span>
+                            <span class="btc-price">0.00043 BTC</span>
+                        </div>
+                        <a href="produto.html?id=green" class="btn pulsate">Ver Produto</a>
+                    </div>
+                </div>
+                
+                <!-- Pink MDMA -->
+                <div class="product-card animated" style="--product-color: #ff8eda;">
+                    <div class="product-image-container">
+                        <div class="product-image">
+                            <img src="assets/img/pink-pill.png" alt="Pink MDMA">
+                        </div>
+                        <div class="product-overlay"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Pink MDMA</h3>
+                        <p class="product-desc">Sensações tácteis amplificadas e conexão social</p>
+                        <p class="product-quantity">320mg</p>
+                        <div class="product-price">
+                            <span class="price">R$ 55,00</span>
+                            <span class="btc-price">0.00049 BTC</span>
+                        </div>
+                        <a href="produto.html?id=pink" class="btn pulsate">Ver Produto</a>
+                    </div>
+                </div>
+                
+                <!-- Edição Limitada - Gold MDMA -->
+                <div class="product-card animated special-edition" style="--product-color: #ffd700;">
+                    <div class="special-tag">Edição Limitada</div>
+                    <div class="product-image-container">
+                        <div class="product-image">
+                            <img src="assets/img/gold-pill.png" alt="Gold MDMA">
+                        </div>
+                        <div class="product-overlay"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Gold MDMA</h3>
+                        <p class="product-desc">Nossa fórmula premium com pureza máxima</p>
+                        <p class="product-quantity">400mg</p>
+                        <div class="product-price">
+                            <span class="price">R$ 75,00</span>
+                            <span class="btc-price">0.00068 BTC</span>
+                        </div>
+                        <a href="produto.html?id=gold" class="btn pulsate">Ver Produto</a>
+                    </div>
+                </div>
+                
+                <!-- Purple MDMA -->
+                <div class="product-card animated" style="--product-color: #9b4cf7;">
+                    <div class="product-image-container">
+                        <div class="product-image">
+                            <img src="assets/img/purple-pill.png" alt="Purple MDMA">
+                        </div>
+                        <div class="product-overlay"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Purple MDMA</h3>
+                        <p class="product-desc">Experiência visual e sensorial potencializada</p>
+                        <p class="product-quantity">290mg</p>
+                        <div class="product-price">
+                            <span class="price">R$ 52,00</span>
+                            <span class="btc-price">0.00047 BTC</span>
+                        </div>
+                        <a href="produto.html?id=purple" class="btn pulsate">Ver Produto</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="disclaimer-footer">
+            <h3>CANDYSHOP BRASIL</h3>
+            <p>Est. 2025 </p>
+            <p>Envio ao Brasil todo no site "http://candyshopbrhqx4osw62xs7abwphsq8ldaylidrx2v2oethdhbj6mlo6r6ad.onion/"</p>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 CandyShop Brasil</p>
+        </div>
+    </footer>
+    
+    <div class="popup" id="checkout-popup">
+        <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <h2>Indisponível no seu local</h2>
+            <p>Entrega indiponível na sua área. Em breve, entrega para todo Brasil.</p>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+<!--
+By: GabeeNoob
+-->
