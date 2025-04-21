@@ -18,7 +18,7 @@ function initializeLocation() {
     
     // In a real application, this would use geolocation or IP detection
     // For demo purposes, we're using a static location
-    const cities = ['São Paulo'];
+    const cities = ['Fortaleza'];
     const randomCity = cities[Math.floor(Math.random() * cities.length)];
     
     locationSpan.textContent = randomCity;
